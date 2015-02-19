@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61D66E81A952FE600550250 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D66E71A952FE600550250 /* CoreData.framework */; };
+		B61D66EA1A95308B00550250 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D66E91A95308B00550250 /* libGoogleAnalyticsServices.a */; };
 		B63D42C91A7DAC3F0008B5D0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63D42C41A7DAC3F0008B5D0 /* Bolts.framework */; };
 		B63D42CA1A7DAC3F0008B5D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63D42C51A7DAC3F0008B5D0 /* Parse.framework */; };
 		B63D42CB1A7DAC3F0008B5D0 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63D42C61A7DAC3F0008B5D0 /* ParseCrashReporting.framework */; };
@@ -53,6 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B61D66DC1A952F0800550250 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		B61D66DD1A952F0800550250 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		B61D66DE1A952F0800550250 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		B61D66DF1A952F0800550250 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		B61D66E01A952F0800550250 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		B61D66E11A952F0800550250 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		B61D66E21A952F0800550250 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		B61D66E31A952F0800550250 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		B61D66E41A952F0800550250 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		B61D66E51A952F0800550250 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		B61D66E71A952FE600550250 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B61D66E91A95308B00550250 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		B63D42C41A7DAC3F0008B5D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1-5/Bolts.framework"; sourceTree = "<group>"; };
 		B63D42C51A7DAC3F0008B5D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1-5/Parse.framework"; sourceTree = "<group>"; };
 		B63D42C61A7DAC3F0008B5D0 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "parse-library-1-5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
@@ -101,6 +115,7 @@
 				B63D42E31A7DACDD0008B5D0 /* libsqlite3.dylib in Frameworks */,
 				B63D42E11A7DACC00008B5D0 /* libz.dylib in Frameworks */,
 				B63D42DF1A7DACB50008B5D0 /* SystemConfiguration.framework in Frameworks */,
+				B61D66E81A952FE600550250 /* CoreData.framework in Frameworks */,
 				B63D42DD1A7DACAB0008B5D0 /* StoreKit.framework in Frameworks */,
 				B63D42DB1A7DACA30008B5D0 /* Security.framework in Frameworks */,
 				B63D42D91A7DAC9B0008B5D0 /* QuartzCore.framework in Frameworks */,
@@ -108,6 +123,7 @@
 				B63D42D51A7DAC890008B5D0 /* CoreLocation.framework in Frameworks */,
 				B63D42D31A7DAC840008B5D0 /* CoreGraphics.framework in Frameworks */,
 				B63D42D11A7DAC7B0008B5D0 /* CFNetwork.framework in Frameworks */,
+				B61D66EA1A95308B00550250 /* libGoogleAnalyticsServices.a in Frameworks */,
 				B63D42CF1A7DAC720008B5D0 /* AudioToolbox.framework in Frameworks */,
 				B63D42CA1A7DAC3F0008B5D0 /* Parse.framework in Frameworks */,
 				B63D42CB1A7DAC3F0008B5D0 /* ParseCrashReporting.framework in Frameworks */,
@@ -127,11 +143,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6B99C961A5F3891000B2239 = {
+		B61D66DB1A952EEE00550250 /* Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B61D66E91A95308B00550250 /* libGoogleAnalyticsServices.a */,
+				B61D66DC1A952F0800550250 /* GAI.h */,
+				B61D66DD1A952F0800550250 /* GAIDictionaryBuilder.h */,
+				B61D66DE1A952F0800550250 /* GAIEcommerceFields.h */,
+				B61D66DF1A952F0800550250 /* GAIEcommerceProduct.h */,
+				B61D66E01A952F0800550250 /* GAIEcommerceProductAction.h */,
+				B61D66E11A952F0800550250 /* GAIEcommercePromotion.h */,
+				B61D66E21A952F0800550250 /* GAIFields.h */,
+				B61D66E31A952F0800550250 /* GAILogger.h */,
+				B61D66E41A952F0800550250 /* GAITrackedViewController.h */,
+				B61D66E51A952F0800550250 /* GAITracker.h */,
+			);
+			name = "Google Analytics";
+			sourceTree = "<group>";
+		};
+		B61D66E61A952F6B00550250 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
 				B63D42E21A7DACDD0008B5D0 /* libsqlite3.dylib */,
 				B63D42E01A7DACC00008B5D0 /* libz.dylib */,
+				B61D66E71A952FE600550250 /* CoreData.framework */,
 				B63D42DE1A7DACB50008B5D0 /* SystemConfiguration.framework */,
 				B63D42DC1A7DACAB0008B5D0 /* StoreKit.framework */,
 				B63D42DA1A7DACA30008B5D0 /* Security.framework */,
@@ -146,6 +181,15 @@
 				B63D42C61A7DAC3F0008B5D0 /* ParseCrashReporting.framework */,
 				B63D42C71A7DAC3F0008B5D0 /* ParseFacebookUtils.framework */,
 				B63D42C81A7DAC3F0008B5D0 /* ParseUI.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		B6B99C961A5F3891000B2239 = {
+			isa = PBXGroup;
+			children = (
+				B61D66DB1A952EEE00550250 /* Google Analytics */,
+				B61D66E61A952F6B00550250 /* FrameWorks */,
 				B6B99CA11A5F3891000B2239 /* Henriksen Survey */,
 				B6B99CBA1A5F3891000B2239 /* Henriksen SurveyTests */,
 				B6B99CA01A5F3891000B2239 /* Products */,
@@ -459,6 +503,10 @@
 				INFOPLIST_FILE = "Henriksen Survey/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Henriksen Survey/Henriksen Survey-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -479,6 +527,10 @@
 				INFOPLIST_FILE = "Henriksen Survey/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Henriksen Survey/Henriksen Survey-Bridging-Header.h";
 			};

@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Screen Tracking for Google Analytcis
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.set(kGAIScreenName, value:"Home Screen")
+        tracker.send(GAIDictionaryBuilder.createScreenView().build())
         
                
     }
@@ -27,6 +30,9 @@ class ViewController: UIViewController {
     
     @IBAction func sendEmailButtonTapped(sender: AnyObject)
     {
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Test", action: "EmailButtonPressed", label: "Email", value: nil).build())
+        
         let configuredMailComposeViewController = emailComposer.configuredMailComposeViewController()
         if emailComposer.canSendMail()
         {
