@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         //Screen Tracking for Google Analytcis
         var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
         tracker.set(kGAIScreenName, value:"Home Screen")
-        tracker.send(GAIDictionaryBuilder.createScreenView().build())
+        tracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
         
                
     }
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBAction func sendEmailButtonTapped(sender: AnyObject)
     {
         var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
-        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Test", action: "EmailButtonPressed", label: "Email", value: nil).build())
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Email", action: "EmailButtonPressed", label: "Email", value: nil).build() as [NSObject : AnyObject])
         
         let configuredMailComposeViewController = emailComposer.configuredMailComposeViewController()
         if emailComposer.canSendMail()
@@ -79,6 +79,9 @@ class ViewController: UIViewController {
         case 1:
             self.phoneCall()
             NSLog("calling")
+            
+            var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+            tracker.send(GAIDictionaryBuilder.createEventWithCategory("Calling", action: "MenuBeingViewed", label: "Call Made", value: nil).build() as [NSObject : AnyObject])
             
         default:
             println("alertView \(buttonIndex) clicked")

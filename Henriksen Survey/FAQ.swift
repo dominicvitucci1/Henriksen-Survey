@@ -35,6 +35,10 @@ class FAQ: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //Screen Tracking for Google Analytcis
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.set(kGAIScreenName, value:"FAQ")
+        tracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
         
         
         
